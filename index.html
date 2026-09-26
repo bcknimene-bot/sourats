@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Al-Baqarah — Lecture calme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=DM+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="simple.css">
+  <link rel="stylesheet" href="tafsir.css">
+  <link rel="stylesheet" href="study.css">
+  <link rel="stylesheet" href="comfort.css">
+</head>
+<body>
+  <header><div class="brand"><span>ب</span><div><strong>Al‑Baqarah</strong><small>La Vache · 286 ayah</small></div></div><div class="header-tools"><details class="comfort"><summary aria-label="Options de confort visuel">Aa</summary><div class="comfort-panel"><strong>Confort visuel</strong><span>Taille du texte</span><div class="comfort-actions"><button data-vision="normal" class="active">Normal</button><button data-vision="large">Grand</button><button data-vision="xlarge">Très grand</button></div><button data-vision="spacing">Plus d’espace</button><button data-vision="glare">Fond doux</button><button data-vision="contrast">Contraste fort</button><button data-vision="motion">Réduire les mouvements</button></div></details><div class="themes" aria-label="Choix de couleur"><button data-theme="white" class="active" title="Fond blanc"></button><button data-theme="green" title="Vert profond"></button></div><select id="language" aria-label="Langue"><option value="fr">Français</option><option value="en">English</option><option value="ar">العربية</option></select></div></header>
+  <main>
+    <div class="status"><span id="readingLabel">Lecture en français</span><span id="progressText">1 / 286</span></div><div class="progress"><i id="progressBar"></i></div>
+    <section class="ayah-card" aria-live="polite"><div class="ayah-top"><span id="verseNumber">AYAH 1</span><select id="verseSelect" aria-label="Choisir une ayah"></select></div><p id="arabicText" class="arabic">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p><p id="translationText" class="translation">Au nom d’Allah, le Tout Miséricordieux, le Très Miséricordieux.</p><small id="translationAttribution">Traduction française</small></section>
+    <div class="audio-box"><div><small>RÉCITATION · SHEIKH ABDURRAHMAN AL‑SUDAIS</small><strong id="audioTitle">Ayah 1</strong></div><div class="audio-controls"><button id="previousVerse" aria-label="Ayah précédente">‹</button><button id="audioToggle" class="play" aria-label="Lecture ou pause">▶</button><button id="nextVerse" aria-label="Ayah suivante">›</button></div><span id="audioState">Prêt à écouter</span></div>
+    <section class="tafsir-box"><div class="tafsir-heading"><div><small>TAFSIR IBN KATHÎR</small><strong id="tafsirRef">Al‑Baqarah · 1</strong></div><div class="tafsir-tools"><button id="tafsirSize" aria-label="Agrandir le tafsir">A+</button><button id="loadTafsir">Actualiser</button></div></div><p class="tafsir-intro">Ce commentaire appartient uniquement à l’ayah affichée ci-dessus.</p><div id="tafsirText"><p>Le tafsir de l’ayah s’affichera ici en même temps que votre lecture.</p></div></section>
+    <aside class="reflection"><div><small>PAUSE DE MÉDITATION</small><p id="reflectionText">Après la récitation, prenez dix secondes pour relire l’ayah en silence.</p></div><button id="reflectionButton">Prendre une pause</button></aside>
+  </main>
+  <footer>Écoutez doucement · Lisez une ayah · Prenez votre temps</footer><audio id="recitation" preload="metadata"></audio><script src="app.js"></script>
+</body>
+</html>
